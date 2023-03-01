@@ -1,4 +1,5 @@
 ---
+import ExpEntry from "../components/experience-entry.astro";
 ---
 
 <html lang="en">
@@ -9,73 +10,84 @@
 		<meta name="generator" content={Astro.generator} />
 		<title>Marat Yuldashev</title>
 	</head>
-	<body>
-		<h1>Marat Yuldashev</h1>
+	<body class="p-20 bg-slate-100">		
 
-		<p>maratyv@gmail.com</p>		
-		<span>+998917715266</span>
-		<span>Uzbekistan</span>
+		<div class="bg-slate-200 p-5 mx-5 rounded-xl max-w-xs">
+			<h1 class="text-3xl">Marat Yuldashev</h1>
 
-		<h2>Work experience (10+ years)</h2>
+			<p>maratyv@gmail.com</p>		
+			<p>+998917715266</p>
+			<p>Uzbekistan</p>
+		</div>				
 
-		<div>
-			<h3>ML engineering, consulting. 2021.</h3>
-			<p>
+		<div class="p-5 max-w-2xl">
+			<h2 class="text-2xl px-5">Work experience</h2>
+
+			<ExpEntry title="ML engineering, consulting. 2021.">
 				Responsible for mathematical analysis and integration with ML
-			algorithms for a private company on a project for NLMK (nlmk.com). The solution saved up to 7% on fuel
-			consumption, increased tire mileage, and reduced environmental impact.
-			</p>
-			 
-			<h3>Data analysis + consulting. 2016-present time.</h3>
-			<p>
-				Data analysis for real estate: risk evaluation (properties
-				100k$-1m$, private clients).
-				Calculating financial models, evaluating market opportunities, and managing key execution steps. Doubled client’s portfolio every 2 years. Data analysis for renting: calculating renovation cost, estimating future profits, researching market opportunities. Initiated and finished 6 successful projects with net profits from 8% up to 35%.
-			</p>
-			<h3>Professor 2018 - present time.</h3>
-			<p>
-				Saint Petersburg State University (Russia) http://apcyb.spbu.ru/ Became one of the youngest professors at the University with a high number of international publications. h-index: 16, 65+ Publications, 350+ citations: Google Scholar, ORCID, SCOPUS, WoS Gave lectures on Mathematical Control theory, ML, seminars on computer science, Java, React, Python, project management. Organized preparation of BSc theses at the department being responsible for problematic cases. For several years our department students have been graded at the top level (mostly A+) among others and organized students internships at IT Companies at the department (theses preparation, feedback). Annually reviewed 80+ essays (theses) in two days (MSC students applicants)
-			</p>
-			
-			<h3>Docent 2014 - 2018.</h3>
-			<p>
-				Saint Petersburg State University (Russia). Teaching Math, Java, Matlab, JS
-			</p>
-			
-			<h3>
-				Assistant lecturer 2012-2013.
-			</h3>
-			<p>
-				Won one of the three grants of the President of Russia (20000$).
-			</p>
-			
-			<h3>
-				Loyalty Plant startup. 2010-2014.
-			</h3>
-			<p>
-				Backend Java Developer (Tomcat, J2SE 5(6), MySQL, JDBC,
-				Hibernate, Maven).
-				In 2014 engineered (С++) and deployed integration of mobile loyalty app with a Linux-based POS system deployed at 20+ shopping centers, which allowed to get the second largest customer (B2B) at that time. In 2015 introduced git-flow to the company with a custom IntellijIdea plugin, and researched docker integration to the development process.
-			</p>
-		</div>
+					algorithms for a private company on a project for NLMK (nlmk.com). The solution saved up to 7% on fuel
+					consumption, increased tire mileage, and reduced environmental impact.
+			</ExpEntry>
 
-		<h2>Education</h2>
-		<p>
-			Nostrification as a Doctor of Science at Saint-Petersburg state university. 2017
-			- Ph.D. (Mathematical information technology) with excellent grades. The University of Jyvaskyla, Faculty
-			of Information Technology, Finland, 2013. MSc (Computer Science), the same faculty, 2012.
-			- Ph.D. in Applied Math. Saint-Petersburg state university, Faculty of Mathematics and Mechanics. 2013.
-			Specialist Degree (MSC) in Mathematics and Software engineering, the same faculty, 2011
-		</p>
-		<h2>Skills</h2>
-		<p>
-			- Web development: JS (Typescript), React, Java, Docker, Github, Youtrack, Confluence
-			- ML: Python, Pandas, Polars, Spark, SQL, scikit-learn, pytorch, A/A/B tests, Statistics
-			- Blockchains: Solidity, Hardhat, ether.js, web3, Polygon, Ethereum, Chainlink VRF and Data Feeds
-		</p>
-		<h2>Hobbies</h2>
-		<p>
-			Airbnb apartments management, investing and reinvesting in real estate, house-flipping. Electric guitar, making tube amplifiers, specialty coffee, swimming.
-		</p>
+			<ExpEntry title="Data analysis + consulting. 2016-present time.">
+				Data analysis for real estate: risk evaluation (properties
+					100k$-1m$, private clients).
+					Calculating financial models, evaluating market opportunities, and managing key execution steps. Doubled client’s portfolio every 2 years. Data analysis for renting: calculating renovation cost, estimating future profits, researching market opportunities. Initiated and finished 6 successful projects with net profits from 8% up to 35%.
+			</ExpEntry>
+			 
+			<ExpEntry title="Professor 2018 - present time.">
+				Saint Petersburg State University (Russia) http://apcyb.spbu.ru/ Became one of the youngest professors at the University with a high number of international publications. h-index: 16, 65+ Publications, 350+ citations: Google Scholar, ORCID, SCOPUS, WoS Gave lectures on Mathematical Control theory, ML, seminars on computer science, Java, React, Python, project management. Organized preparation of BSc theses at the department being responsible for problematic cases. For several years our department students have been graded at the top level (mostly A+) among others and organized students internships at IT Companies at the department (theses preparation, feedback). Annually reviewed 80+ essays (theses) in two days (MSC students applicants)
+			</ExpEntry>
+
+			<ExpEntry title="Docent 2014 - 2018.">
+				Saint Petersburg State University (Russia). Teaching Math, Java, Matlab, JS
+			</ExpEntry>
+
+			<ExpEntry title="Assistant lecturer 2012-2013.">
+				Won one of the three grants of the President of Russia (20000$).
+			</ExpEntry>
+
+			<ExpEntry title="Loyalty Plant startup. 2010-2014.">
+				Backend Java Developer (Tomcat, J2SE 5(6), MySQL, JDBC,
+					Hibernate, Maven). In 2014 engineered (С++) and deployed integration of mobile loyalty app with a Linux-based POS system deployed at 20+ shopping centers, which allowed to get the second largest customer (B2B) at that time. In 2015 introduced git-flow to the company with a custom IntellijIdea plugin, and researched docker integration to the development process.
+			</ExpEntry>					
+
+			<h2 class="text-2xl px-5">Education</h2>
+			<ExpEntry title="Nostrification Dr. Science 2017.">
+				Nostrification as a Doctor of Science at Saint-Petersburg state university.
+			</ExpEntry>
+
+			<ExpEntry title="Ph.D. (Mathematical information technology) 2013">
+				Excellent grades. The University of Jyvaskyla, Faculty
+				of Information Technology, Finland, 2013. MSc (Computer Science), the same faculty, 2012.
+			</ExpEntry>
+
+			<ExpEntry title="Ph.D. in Applied Math. Saint-Petersburg state university">
+				Faculty of Mathematics and Mechanics. 2013.
+			</ExpEntry>
+
+			<ExpEntry title="Specialist Degree (MSC) in Mathematics and Software engineering">
+				Saint-Petersburg state university, 2011.
+			</ExpEntry>
+			
+			<h2 class="text-2xl px-5">Skills</h2>
+
+			<ExpEntry title="Web dev">
+				JS (Typescript), React, Java, Docker, Github, Youtrack, Confluence
+			</ExpEntry>
+
+			<ExpEntry title="ML">
+				Python, Pandas, Polars, Spark, SQL, scikit-learn, pytorch, A/A/B tests, Statistics
+			</ExpEntry>
+
+			<ExpEntry title="Math">
+				Linear Algebra, Calculus, Probability theory, Statistics, Optimization, Control theory, Numerical methods, Differential equations, Complex analysis, Mathematical analysis, Mathematical modeling
+			</ExpEntry>
+					
+			<h2 class="text-2xl px-5">Hobbies</h2>		
+			<ExpEntry>
+				Airbnb apartments management, investing and reinvesting in real estate, house-flipping. Electric guitar, making tube amplifiers, specialty coffee, swimming.
+			</ExpEntry>		
+		</div>
 	</body>
 </html>
