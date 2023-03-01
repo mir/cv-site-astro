@@ -1,5 +1,6 @@
 ---
 import ExpEntry from "../components/experience-entry.astro";
+import ExpHeader from "../components/experience-header.astro";
 ---
 
 <html lang="en">
@@ -29,7 +30,7 @@ import ExpEntry from "../components/experience-entry.astro";
 		</div>				
 
 		<div class="py-1 sm:p-5 max-w-2xl">
-			<h2 class="text-2xl sm:px-5">Work experience</h2>
+			<ExpHeader>Work experience</ExpHeader>			
 
 			<ExpEntry title="ML engineering, consulting. 2021.">
 				Responsible for mathematical analysis and integration with ML
@@ -58,9 +59,10 @@ import ExpEntry from "../components/experience-entry.astro";
 			<ExpEntry title="Loyalty Plant startup. 2010-2014.">
 				Backend Java Developer (Tomcat, J2SE 5(6), MySQL, JDBC,
 					Hibernate, Maven). In 2014 engineered (С++) and deployed integration of mobile loyalty app with a Linux-based POS system deployed at 20+ shopping centers, which allowed to get the second largest customer (B2B) at that time. In 2015 introduced git-flow to the company with a custom IntellijIdea plugin, and researched docker integration to the development process.
-			</ExpEntry>					
+			</ExpEntry>								
 
-			<h2 class="text-2xl px-5">Education</h2>
+			<ExpHeader>Education</ExpHeader>
+
 			<ExpEntry title="Nostrification Dr. Science 2017.">
 				Nostrification as a Doctor of Science at Saint-Petersburg state university.
 			</ExpEntry>
@@ -78,7 +80,7 @@ import ExpEntry from "../components/experience-entry.astro";
 				Saint-Petersburg state university, 2011.
 			</ExpEntry>
 			
-			<h2 class="text-2xl px-5">Skills</h2>
+			<ExpHeader>Skills</ExpHeader>			
 
 			<ExpEntry title="Web dev">
 				JS (Typescript), React, Java, Docker, Github, Youtrack, Confluence
@@ -90,9 +92,9 @@ import ExpEntry from "../components/experience-entry.astro";
 
 			<ExpEntry title="Math">
 				Linear Algebra, Calculus, Probability theory, Statistics, Optimization, Control theory, Numerical methods, Differential equations, Complex analysis, Mathematical analysis, Mathematical modeling
-			</ExpEntry>
-					
-			<h2 class="text-2xl px-5">Hobbies</h2>		
+			</ExpEntry>							
+			
+			<ExpHeader>Hobbies</ExpHeader>
 			<ExpEntry>
 				Airbnb apartments management, investing and reinvesting in real estate, house-flipping. Electric guitar, making tube amplifiers, specialty coffee, swimming.
 			</ExpEntry>		
