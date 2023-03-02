@@ -31,7 +31,7 @@ const parseResult = Papa.parse(data, {
 ---
 <ExpHeader>Publicatons (<a class="underline text-blue-600 hover:text-blue-800 visited:text-purple-600" href="https://scholar.google.com/citations?user=8Z_zXQsAAAAJ">Google scholar</a>)</ExpHeader>
 <ExpEntry>
-    <ul class="list-decimal px-5">
+    <ul class="list-decimal pl-8">
     {parseResult.data
     .filter((entry) => entry.Year !== undefined && entry.Year.trim() !== "")    
     .sort(function(a, b) {        
