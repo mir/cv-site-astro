@@ -1,0 +1,51 @@
+---
+import ExpEntry from "./experience-entry.astro";
+import ExpHeader from "./experience-header.astro";
+import Papa from "papaparse";
+
+const response = await fetch(
+    "https://scholar.googleusercontent.com/citations?view_op=export_citations&user=8Z_zXQsAAAAJ&citsig=AMD79ooAAAAAZAHovAfrRlNfPKo5Sp5dVCCVVyUgvBGK&hl=en", {
+    "credentials": "omit",
+    "headers": {
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/110.0",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.5",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Alt-Used": "scholar.googleusercontent.com",
+        "Upgrade-Insecure-Requests": "1",
+        "Sec-Fetch-Dest": "document",
+        "Sec-Fetch-Mode": "navigate",
+        "Sec-Fetch-Site": "cross-site",
+        "Sec-Fetch-User": "?1"
+    },
+    "referrer": "https://scholar.google.com/",
+    "body": "cit_fmt=4&s=&export_selected_btn=",
+    "method": "POST",
+    "mode": "cors"
+});
+const data = await response.text()
+const parseResult = Papa.parse(data, {
+    header: true,
+    skipEmptyLines: true,
+})
+---
+<ExpHeader>Publicatons (<a class="underline text-blue-600 hover:text-blue-800 visited:text-purple-600" href="https://scholar.google.com/citations?user=8Z_zXQsAAAAJ">Google scholar</a>)</ExpHeader>
+<ExpEntry>
+    <ul class="list-decimal px-5">
+    {parseResult.data
+    .filter((entry) => entry.Year !== undefined && entry.Year.trim() !== "")    
+    .sort(function(a, b) {        
+        console.log(a.Year, b.Year, parseFloat(b.Year) - parseFloat(a.Year))
+        return parseFloat(b.Year) - parseFloat(a.Year);        
+    }).map((entry) => {
+        return (
+            // list of publications              
+            <li>
+                    {entry.Title}.
+                    {entry.Publication}.
+                    {entry.Year}
+            </li>
+        )
+    })}
+    </ul>
+</ExpEntry>
