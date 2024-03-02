@@ -3,7 +3,6 @@ import ExpEntry from "../components/experience-entry.astro";
 import ExpHeader from "../components/experience-header.astro";
 import Contacts from "../components/contacts/contacts.astro";
 ---
-
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
@@ -23,80 +22,81 @@ import Contacts from "../components/contacts/contacts.astro";
 
 		<div class="py-1 sm:p-5 max-w-2xl">
 			<ExpHeader>Work experience</ExpHeader>			
-
-			<ExpEntry title="ML engineering, consulting. 2021.">
-				Responsible for mathematical analysis and integration with ML
-					algorithms for a private company on a project for NLMK (nlmk.com). The solution saved up to 7% on fuel
-					consumption, increased tire mileage, and reduced environmental impact.
+			
+			<ExpEntry title="Data Science Lead. 2023-Present time"> 
+				Space 307 is a software company that provides a trading platform for a variety of financial instruments.
+				I'm serving as the tech lead and manager for the data science team responsible for the experimentation platform.
+				Built company rules and guidance for designing, launching, controlling, analyzing and reporting AB tests.
+				In a short time, developed and implemented a Python toolkit
+				to pull data from the analytical warehouse and assess statistical significance within minutes,
+				speeding up the analysis and reporting process from days to hours. 
+				Introduced more robust and powerful statistical tests. 
+				Developed the specification of a new system for splitting users into groups, 
+				which was successfully implemented, allowing to run a large number of tests in parallel 
+				and launch new types of tests. 
+				As a result, I analyzed about 100 tests and ran over 30, 
+				increasing conversion by 12% and other metrics by 10-15%. 
+				Implemented an ongoing team training process and conducted over 50 interviews for analytics teams.
 			</ExpEntry>
 
+			<ExpEntry title="ML engineering, consulting. 2021-2022">
+				Responsible for mathematical analysis and integration with ML
+					algorithms for a private company on a project for NLMK (nlmk.com).
+					The solution saved up to 7% on fuel
+					consumption, increased tire mileage, and reduced environmental impact.								
+			</ExpEntry>
+
+			<ExpEntry title="Professor. 2018 - 2023.">
+				Saint Petersburg State University (Russia) <a href="http://spbu.ru/">spbu.ru</a>. Became one of the youngest professors at the University with a high number of international publications. h-index: 16.
+				Gave lectures on Mathematical Control theory, ML, seminars on computer science, Java, React, Python, project management. Organized preparation of BSc theses at the department being responsible for problematic cases. For several years our department students have been graded at the top level (mostly A+) among others and organized students internships at IT Companies at the department (theses preparation, feedback). Annually reviewed 80+ essays (theses) in two days (MSC students applicants)
+			</ExpEntry>			
+
+			<ExpEntry title="Backend Java Developer 2010-2015.">
+				Loyalty Plant startup. (Tomcat, J2SE 5(6), MySQL, JDBC,
+					Hibernate, Maven). 
+					Engineered (С++) and deployed integration of mobile loyalty app with a Linux-based POS system deployed at 20+ shopping centers, 
+					which allowed to get the second largest customer (B2B) at that time. 
+					Introduced git-flow to the company with a custom IntellijIdea plugin, 
+					and researched docker integration to the development process.
+			</ExpEntry>			
+			
 			<ExpEntry title="Data analysis + consulting. 2016-present time.">
 				Data analysis for real estate: risk evaluation (properties
 					100k$-1m$, private clients).
 					Calculating financial models, evaluating market opportunities, and managing key execution steps. Doubled client’s portfolio every 2 years. Data analysis for renting: calculating renovation cost, estimating future profits, researching market opportunities. Initiated and finished 6 successful projects with net profits from 8% up to 35%.
 			</ExpEntry>
-			 
-			<ExpEntry title="Professor 2018 - present time.">
-				Saint Petersburg State University (Russia) <a href="http://spbu.ru/">spbu.ru</a>. Became one of the youngest professors at the University with a high number of international publications. h-index: 16.
-				Gave lectures on Mathematical Control theory, ML, seminars on computer science, Java, React, Python, project management. Organized preparation of BSc theses at the department being responsible for problematic cases. For several years our department students have been graded at the top level (mostly A+) among others and organized students internships at IT Companies at the department (theses preparation, feedback). Annually reviewed 80+ essays (theses) in two days (MSC students applicants)
-			</ExpEntry>
-
-			<ExpEntry title="Docent 2014 - 2018.">
-				Saint Petersburg State University (Russia). Teaching Math, Java, Matlab, JS
-			</ExpEntry>
-
-			<ExpEntry title="Assistant lecturer 2012-2013.">
-				Won one of the three grants of the President of Russia (20000$).
-			</ExpEntry>
-
-			<ExpEntry title="Loyalty Plant startup. 2010-2014.">
-				Backend Java Developer (Tomcat, J2SE 5(6), MySQL, JDBC,
-					Hibernate, Maven). In 2014 engineered (С++) and deployed integration of mobile loyalty app with a Linux-based POS system deployed at 20+ shopping centers, which allowed to get the second largest customer (B2B) at that time. In 2015 introduced git-flow to the company with a custom IntellijIdea plugin, and researched docker integration to the development process.
-			</ExpEntry>								
-
-			<ExpHeader>Publications</ExpHeader>
-			<ExpEntry title="60+ publications, 300+ citations">								
-				<a href="https://scholar.google.com/citations?user=8Z_zXQsAAAAJ">Google Scholar</a><br/>
-				<a href="https://orcid.org/0000-0002-4922-4043">ORCID</a><br/>
-				<a href="https://www.scopus.com/authid/detail.uri?authorId=49964985100">Scopus</a><br/>
-			</ExpEntry>
 
 			<ExpHeader>Education</ExpHeader>
 
-			<ExpEntry title="Nostrification Dr. Science 2017.">
-				Nostrification as a Doctor of Science at Saint-Petersburg state university.
+			<ExpEntry title="Ph.D. University of Jyväskylä">
+				Excellent grades.
+				Faculty of Information Technology, Finland, 2013. 
+				MSc (Computer Science), the same faculty, 2012.
 			</ExpEntry>
 
-			<ExpEntry title="Ph.D. (Mathematical information technology) 2013">
-				Excellent grades. <a href="https://www.jyu.fi/en/">University of Jyväskylä</a>, Faculty
-				of Information Technology, Finland, 2013. MSc (Computer Science), the same faculty, 2012.
-			</ExpEntry>
-
-			<ExpEntry title="Ph.D. in Applied Math. Saint-Petersburg state university">
+			<ExpEntry title="Ph.D. Saint-Petersburg state university">
 				Faculty of Mathematics and Mechanics. 2013.
-			</ExpEntry>
-
-			<ExpEntry title="Specialist Degree (MSC) in Mathematics and Software engineering">
-				Saint-Petersburg state university, 2011.
 			</ExpEntry>
 			
 			<ExpHeader>Skills</ExpHeader>			
+			
+			<ExpEntry title="Data Science">
+				Python, Pandas, Polars, Spark, SQL, scikit-learn, pytorch, A/A/B tests, Statistics
+			</ExpEntry>
 
 			<ExpEntry title="Web dev">
 				JS (Typescript), React, Java, Docker, Github, Youtrack, Confluence
-			</ExpEntry>
-
-			<ExpEntry title="ML">
-				Python, Pandas, Polars, Spark, SQL, scikit-learn, pytorch, A/A/B tests, Statistics
 			</ExpEntry>
 
 			<ExpEntry title="Math">
 				Linear Algebra, Calculus, Probability theory, Statistics, Optimization, Control theory, Numerical methods, Differential equations, Complex analysis, Mathematical analysis, Mathematical modeling
 			</ExpEntry>							
 			
-			<ExpHeader>Hobbies</ExpHeader>
+			<ExpHeader>Blogs</ExpHeader>
 			<ExpEntry>
-				Airbnb apartments management, investing and reinvesting in real estate, house-flipping. Electric guitar, making tube amplifiers, specialty coffee, swimming.
+				<a href="https://habr.com/ru/users/maratyv/publications/articles/">habr (Ru)</a>
+				<br />
+				<a href="https://medium.com/me/stories/public">medium (En)</a>
 			</ExpEntry>		
 		</div>
 	</body>
